@@ -1,0 +1,52 @@
+.navbar-toggler span {
+    display: block;
+    background-color: #4f4f4f;
+    height: 3px;
+    width: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 0;
+    opacity: 1;
+    transition: all 0.35s ease-out;
+    transform-origin: center left;
+}
+
+.navbar-toggler span:nth-child(1) {
+    margin-top: 0.3em;
+}
+
+/**
+ * Animate collapse so it forms X.
+ */
+
+/* rotate 1st bar clockwise by 45 degrees and moves up so it closes the center of the X */
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+    transform: translate(15%, -33%) rotate(45deg);
+}
+/* 2nd bar goes transparent */
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+    opacity: 0;
+}
+/* rotate 3rd bar anti-clockwise by 45 degrees , in, and down so it closes the center of the X */
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+    transform: translate(15%, 33%) rotate(-45deg) ;
+}
+
+
+/**
+ * Animate X back into hamburger menu
+ */
+
+/* 1st bar moves back to its initial position and rotates back to 0 degrees */
+.navbar-toggler span:nth-child(1) {
+    transform: translate(0%, 0%) rotate(0deg) ;
+}
+/* 2nd bar line goes back to regular color and opacity */
+.navbar-toggler span:nth-child(2) {
+    opacity: 1;
+}
+/* 3rd bar goes back to initial position and rotates back to 0 degrees */
+.navbar-toggler span:nth-child(3) {
+    transform: translate(0%, 0%) rotate(0deg) ;
+}
