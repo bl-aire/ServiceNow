@@ -1,3 +1,22 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar{
+    margin: 3em;
+}
+
+a{
+    color: #000000;
+}
+
+a:hover{
+    color: rgb(209, 47, 47);
+}
+
 .navbar-toggler span {
     display: block;
     background-color: #4f4f4f;
@@ -49,14 +68,4 @@
 /* 3rd bar goes back to initial position and rotates back to 0 degrees */
 .navbar-toggler span:nth-child(3) {
     transform: translate(0%, 0%) rotate(0deg) ;
-}
-
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.avatar{
-    margin: 3em;
 }
