@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom:3em;
 }
 
 .avatar{
@@ -17,6 +18,10 @@ a{
 
 a:hover{
     color: rgb(209, 47, 47);
+}
+
+h2{
+    margin: 1em;
 }
 
 .navbar-toggler span {
